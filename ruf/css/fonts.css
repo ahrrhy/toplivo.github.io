@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'MyriadProBold';
+    src: url('MyriadProBold/MyriadProBold.eot');
+    src: url('MyriadProBold/MyriadProBold.eot') format('embedded-opentype'),
+         url('MyriadProBold/MyriadProBold.woff') format('woff'),
+         url('MyriadProBold/MyriadProBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MyriadProRegular';
+    src: url('MyriadProRegular/MyriadProRegular.eot');
+    src: url('MyriadProRegular/MyriadProRegular.eot') format('embedded-opentype'),
+    url('MyriadProRegular/MyriadProRegular.woff') format('woff'),
+    url('MyriadProRegular/MyriadProRegular.ttf') format('truetype');
+}
