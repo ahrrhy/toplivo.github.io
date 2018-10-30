@@ -242,10 +242,15 @@ a img {
 
   .logo {
     font-family: $RalewayRegular;
-    font-size: 35px;
+    font-size: 20px;
     text-align: center;
     color: #ffba00;
-    padding-top: 25px;
+    padding-top: 10px;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 25px;
+      font-size: 25px;
+    }
 
     @media screen and (min-width: 769px) {
       font-size: 40px;
@@ -262,13 +267,19 @@ a img {
   }
 
   .info {
-    //width: 734px;
-    //float: left;
-    padding-top: 25px;
+    padding-top: 5px;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 25px;
+    }
 
     .tel {
       margin-bottom: 10px;
       text-align: center;
+
+      a {
+        color: inherit;
+      }
 
       .email {
         font-size: 18px;
@@ -278,6 +289,7 @@ a img {
       ul {
         padding: 0;
         margin-left: 0;
+        margin-top: 0;
         list-style: none;
         text-align: center;
         color: #ffffff;
@@ -288,11 +300,15 @@ a img {
         }
 
         li {
-          font-size: 24px;
+          font-size: 18px;
           line-height: 19px;
           text-transform: uppercase;
           margin-left: 0;
-          margin-top: 10px;
+          margin-top: 5px;
+
+          &:first-child {
+            font-size: 17px;
+          }
 
           @media screen and (min-width: 768px) {
             display: inline-block;
@@ -301,10 +317,7 @@ a img {
             float: none;
             vertical-align: middle;
             text-align: center;
-          }
-
-          span {
-            font-size: 17px;
+            font-size: 24px;
           }
 
           p {
@@ -343,18 +356,31 @@ a img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  span {
+    display: block;
+  }
+}
+
 .b2 {
   background-color: #f9f9f9;
   padding-bottom: 30px;
 
   .bl {
-    margin-top: 30px;
-    background: url("../img/b-2-b.jpg") center bottom/320px auto no-repeat;
+    margin-top: 20px;
+    background: url("../img/b-2-b.jpg") center bottom/contain no-repeat;
     padding-bottom: 25px;
 
+    @media only screen and (orientation: landscape) {
+      background: url("../img/b-2-b.jpg") center bottom/290px auto no-repeat;
+    }
+
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-      padding-bottom: 37px;
       background: url("../img/b-2-b.jpg") center bottom/contain no-repeat;
+    }
+
+    @media screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1199px) {
+      background: url("../img/b-2-b.jpg") center bottom/290px auto no-repeat;
     }
 
     @media screen and (min-width: 1200px) {
@@ -364,28 +390,31 @@ a img {
 
     .item-header {
       font-family: $RalewayMedium;
-      font-size: 24px;
+      font-size: 16px;
       text-transform: uppercase;
       text-align: center;
       color: #626262;
-      margin: 0 0 -20px;
+      margin: 0 0 -40px;
+      @media screen and (min-width: 768px) {
+        font-size: 24px;
+      }
 
     }
 
     &:first-child  .t {
-      background:url('../img/b-2-1.jpg') center center/contain no-repeat;
+      background: url('../img/b-2-1.jpg') center top/contain no-repeat;
     }
 
     &:nth-child(2) .t {
-      background:url('../img/b-2-2.jpg') center center/contain no-repeat;
+      background: url('../img/b-2-2.jpg') center top/contain no-repeat;
     }
 
     &:last-child .t {
-      background:url('../img/b-2-3.jpg') center center/contain no-repeat;
+      background: url('../img/b-2-3.jpg') center top/contain no-repeat;
     }
 
     .t {
-      height: 385px;
+      height: 350px;
 
       @media screen and (min-width: 768px) and (max-width: 991px) {
         height: 278px;
@@ -397,27 +426,35 @@ a img {
     }
 
     .in {
-      background: url("../img/b-2-c.jpg") center top/320px auto repeat-y;
+      background: url("../img/b-2-c.jpg") center top/contain repeat-y;
       text-align: center;
 
       @media screen and (min-width: 768px) and (max-width: 1199px) {
         background: url("../img/b-2-c.jpg") center bottom/contain repeat-y;
       }
 
+      @media only screen and (orientation: landscape) and (max-width: 568px) {
+        background: url("../img/b-2-c.jpg") center top/290px auto repeat-y;
+        text-align: center;
+      }
+
       @media screen and (min-width: 1200px) {
         background: url("../img/b-2-c.jpg") center bottom/auto auto repeat-y;
       }
 
+      @media screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1199px) {
+        background: url("../img/b-2-c.jpg") center bottom/290px auto repeat-y;
+      }
+
       p {
-        font-size: 24px;
+        font-size: 18px;
         font-family: $RalewayMedium;
         color: #626262;
         text-align: center;
         margin: 0;
 
-        @media screen and (min-width: 768px) and (max-width: 991px) {
-          font-size: 18px;
-
+        @media screen and (min-width: 992px){
+          font-size: 24px;
         }
       }
 
