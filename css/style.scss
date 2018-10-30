@@ -367,7 +367,7 @@ a img {
 
   .bl {
     margin-top: 20px;
-    background: url("../img/b-2-b.jpg") center bottom/contain no-repeat;
+    background: url("../img/b-2-b.jpg") center bottom/290px no-repeat;
     padding-bottom: 25px;
 
     @media only screen and (orientation: landscape) {
@@ -401,15 +401,33 @@ a img {
     }
 
     &:first-child  .t {
-      background: url('../img/b-2-1.jpg') center top/contain no-repeat;
+      background: url('../img/b-2-1.jpg') center top/290px no-repeat;
+
+      @media screen and (min-width: 768px) and (max-width: 991px) {
+        background: url('../img/b-2-1.jpg') center top/contain no-repeat;
+      }
+      @media screen and (min-width: 1200px) {
+        background: url('../img/b-2-1.jpg') center top/auto auto no-repeat;
+      }
     }
 
     &:nth-child(2) .t {
-      background: url('../img/b-2-2.jpg') center top/contain no-repeat;
+      background: url('../img/b-2-2.jpg') center top/290px no-repeat;
+      @media screen and (min-width: 768px) and (max-width: 991px) {
+        background: url('../img/b-2-2.jpg') center top/contain no-repeat;
+      }
+      @media screen and (min-width: 1200px) {
+        background: url('../img/b-2-2.jpg') center top/auto auto no-repeat;
+      }
     }
-
     &:last-child .t {
-      background: url('../img/b-2-3.jpg') center top/contain no-repeat;
+      background: url('../img/b-2-3.jpg') center top/290px no-repeat;
+      @media screen and (min-width: 768px) and (max-width: 991px) {
+        background: url('../img/b-2-3.jpg') center top/contain no-repeat;
+      }
+      @media screen and (min-width: 1200px) {
+        background: url('../img/b-2-3.jpg') center top/auto auto no-repeat;
+      }
     }
 
     .t {
@@ -425,7 +443,7 @@ a img {
     }
 
     .in {
-      background: url("../img/b-2-c.jpg") center top/contain repeat-y;
+      background: url("../img/b-2-c.jpg") center top/290px repeat-y;
       text-align: center;
 
       @media screen and (min-width: 768px) and (max-width: 1199px) {
