@@ -235,7 +235,6 @@ a img {
 }
 
 .b1 {
-  //height: 144px;
   background: url('../img/b1.jpg') center top/cover no-repeat;
   border-bottom: 4px solid #ffba00;
 
@@ -247,7 +246,7 @@ a img {
     padding-top: 10px;
 
     @media screen and (min-width: 768px) {
-      padding-top: 25px;
+      padding: 25px 0 20px;
       font-size: 25px;
     }
 
@@ -317,6 +316,10 @@ a img {
             vertical-align: middle;
             text-align: center;
             font-size: 24px;
+            &:first-child {
+              padding-top: 10px;
+              font-size: 17px;
+            }
           }
 
           p {
@@ -903,9 +906,13 @@ a img {
 
   .logo {
     font-family: $RalewayRegular;
-    font-size: 40px;
+    font-size: 26px;
     color: #343434;
     padding-top: 25px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 40px;
+    }
 
     span {
       font-family: $RalewayBold;
@@ -917,15 +924,26 @@ a img {
     font-family: $RalewayRegular;
     color: #fff;
     font-size: 22px;
-    padding-top: 60px;
+    padding-top: 10px;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 60px;
+
+    }
   }
 
   .tel {
     font-family: $MyriadProRegular;
     color: #fff;
     font-size: 24px;
-    padding: 20px 0 0;
+    padding: 0;
     list-style: none;
+    margin: 0;
+
+    @media screen and (min-width: 768px) {
+      padding: 20px 0 0;
+      margin: 24px 0;
+    }
 
     p {
       margin: 5px;
